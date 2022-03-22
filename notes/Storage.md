@@ -3,7 +3,7 @@ attachments: [Clipboard_2022-03-17-12-39-15.png, Clipboard_2022-03-17-12-46-36.p
 tags: [DBII]
 title: Storage
 created: '2022-03-17T15:59:40.787Z'
-modified: '2022-03-17T16:46:42.368Z'
+modified: '2022-03-21T15:20:53.874Z'
 ---
 
 # Storage
@@ -70,7 +70,7 @@ Total Disk latency is just calculated as if reading 1 block, because they are al
 After the cylinder is taken up, putting blocks on the next track will be the next best option
 
 #### Disk Striping
-distributing data among more disks will speed up also. Puting the blocks on the same cylinder on different disks will be ideal. Since each disk works independently, the block-pairs do not need to be on the same cylinder.
+Distributing data among more disks. NOT MIRRORS, sequential data is put on different disks to be read simultaneously. Puting the blocks on the same cylinder on different disks will be ideal. Since each disk works independently, the block-pairs do not need to be on the same cylinder.
 
 #### Disk Mirroring
 Multiple disks, but some are copies. Advantage is you can recover from failure.
