@@ -1,7 +1,8 @@
 ---
+tags: [DBII]
 title: Jair Meza Homework 1
 created: '2022-03-20T21:54:08.471Z'
-modified: '2022-03-22T17:39:27.212Z'
+modified: '2022-03-25T21:09:38.802Z'
 ---
 
 # Jair Meza Homework 1
