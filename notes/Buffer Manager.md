@@ -1,8 +1,8 @@
 ---
-attachments: [Clipboard_2022-03-24-16-14-11.png]
+attachments: [Clipboard_2022-03-24-16-14-11.png, Clipboard_2022-03-28-10-03-30.png, Clipboard_2022-03-28-10-03-46.png]
 title: Buffer Manager
 created: '2022-03-24T19:47:49.210Z'
-modified: '2022-03-24T20:14:11.090Z'
+modified: '2022-03-28T14:03:46.816Z'
 ---
 
 # Buffer Manager
@@ -28,5 +28,9 @@ Only I/O to write back to disk is necessary when data changes, dirty bit
 ### Summary
 Buffer pool is chunk of memory allocated for DBMS that contains frames equal in size as system block size. Frames may be empty or contain a disk page.
 Flow of events [^1]
+
+## Buffer Pool Scheduling
+![](@attachment/Clipboard_2022-03-28-10-03-30.png)
+![](@attachment/Clipboard_2022-03-28-10-03-46.png)
 
 [^1]:![](@attachment/Clipboard_2022-03-24-16-14-11.png)
