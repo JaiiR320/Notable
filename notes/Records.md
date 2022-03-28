@@ -2,7 +2,7 @@
 attachments: [Clipboard_2022-03-21-11-34-25.png, Clipboard_2022-03-21-11-35-08.png, Clipboard_2022-03-21-11-36-00.png, Clipboard_2022-03-21-11-38-06.png, Clipboard_2022-03-21-12-36-39.png]
 title: Records
 created: '2022-03-21T15:30:44.936Z'
-modified: '2022-03-21T16:44:44.670Z'
+modified: '2022-03-24T19:38:14.232Z'
 ---
 
 # Records
@@ -111,7 +111,33 @@ Updating record can be problematic, record size could change
 Move record to another place in the block, update offset in slot array. ID stays the same
 If there is no more space in the block, then the DBMS is forced to move the record to another block, therefore changing the ID
 
+## Example
+```SQL
+CREATE TABLE STUDENT(
+SID Char(20),
+Name Char(100),
+StreetName Varchar(50),
+Zipcode INT,
+Phone Char(10),
+DoB Date
+)
+```
 
+### Q1
+Varchar is variable length, so the records will be variable length
+
+### Q2
+Record size, 4 byte alignment
+record size = header + fields
+record size = 20 + 20 + 100 + (50 + 2) + 4 + (10 + 2) + (10 + 2)
+220 bytes
+
+### Q3
+assume the table has 1,000,000 records, how many blocks are required
+block size is 4Kb, header is 100 bytes
+Avaliable space per block = 4096 - 100 = 3996
+3996 / 220 = 18 records
+1,000,000 / 18 = 55,555.55 -> 55,556 blocks
 
 
 [^1]: ![](@attachment/Clipboard_2022-03-21-11-35-08.png)
