@@ -1,8 +1,9 @@
 ---
 attachments: [Clipboard_2022-03-21-11-34-25.png, Clipboard_2022-03-21-11-35-08.png, Clipboard_2022-03-21-11-36-00.png, Clipboard_2022-03-21-11-38-06.png, Clipboard_2022-03-21-12-36-39.png]
+tags: [DBII]
 title: Records
 created: '2022-03-21T15:30:44.936Z'
-modified: '2022-03-24T19:38:14.232Z'
+modified: '2022-03-25T21:09:20.427Z'
 ---
 
 # Records
@@ -33,7 +34,7 @@ Holds metadata information such as pointer to schema information, length of reco
 Start with block header
 - timestamp of last modified/accessed
 - links to next and previous block
-- **info about record offsets**
+- info about record offsets
 
 Followed by sequence of records
 May end with unused space
