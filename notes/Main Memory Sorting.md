@@ -3,7 +3,7 @@ attachments: [Clipboard_2022-03-28-11-35-49.png]
 tags: [DBII]
 title: Main Memory Sorting
 created: '2022-03-28T15:28:22.865Z'
-modified: '2022-03-28T16:45:41.035Z'
+modified: '2022-04-03T19:39:03.652Z'
 ---
 
 # Main Memory Sorting
@@ -52,7 +52,7 @@ Phase 2, 3...n: Merge
 During merge step, you ONLY need 3 memory buffers, 2 for the blocks you want to merge, and the 3rd for the output. If the lists are larger than 1 block, then you only store the first block and pull in the second when you exhaust the block. Same with output, you only write to disk when the output is full, and then erase/write over.
 
 Number of I/Os in each phase = 2n, reading all blocks and writing all blocks every phase
-Number of merge phases = log2(n) + 1, you divide the initial number of runs by 2 each time
+Number of merge phases = **log2(n)** + 1, you divide the initial number of runs by 2 each time
 n, n/2, n/4... 1
 
 ### Total I/Os
@@ -75,7 +75,7 @@ Phase 2: Merge
 - take m-1 runs (collection of blocks that are sorted together)
 
 number of merge phases = n/m, n/m/(m-1), n/m/(m-1)^2... 1
-log m-1 (n/m)
+**log m-1 (n/m)**
 number of I/Os = 2n, always reading all blocks and writing all blocks
 
 ### Total I/Os
