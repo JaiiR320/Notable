@@ -2,7 +2,7 @@
 tags: [AI]
 title: AI
 created: '2022-10-25T20:06:59.134Z'
-modified: '2022-10-28T21:40:53.994Z'
+modified: '2022-11-01T20:30:01.436Z'
 ---
 
 # AI
@@ -42,6 +42,13 @@ when actions or states are distinct and clearly defined. chess vs self driving c
 ### single/multiple agents
 single when only one agent. crossword vs soccer game
 
+Simple Reflex Agent
+assumes environment is fullly observable
+
+Model-based Reflex Agents
+Keeps a state of the world 
+agent's best guess
+cannot see picture the whole time, needs memory to memorize what has been seen so far
 
 
 
