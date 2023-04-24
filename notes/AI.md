@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [AI]
 title: AI
 created: '2022-10-25T20:06:59.134Z'
-modified: '2022-11-01T20:30:01.436Z'
+modified: '2023-03-23T15:14:53.620Z'
 ---
 
 # AI
