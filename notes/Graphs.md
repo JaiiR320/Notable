@@ -2,7 +2,7 @@
 tags: [Algorithms]
 title: Graphs
 created: '2023-10-27T19:25:34.776Z'
-modified: '2023-10-31T19:49:29.576Z'
+modified: '2023-11-07T19:48:37.575Z'
 ---
 
 # Graphs
@@ -35,12 +35,14 @@ proof: when you scan all the vertices and increment the degrees, when you encoun
 A path is a sequence of nodes where each consecutive pair connects two nodes. 
 Connected components are a set of vertices that are all connected. For any pair of nodes in that component, there is a path between them.
 
-Definition: a undirected gaph is connectes if for every pair of nodex u, v, there exists a path between u and v. 
+Definition: a undirected gaph is connected if for every pair of nodex u, v, there exists a path between u and v. 
 
 Fact: Two different connected componnets are disjoint. 
 
 Cycle
-Def: a simple path in which all nodes are distinct
+Def: a simple path in which all nodes are distinc
+
+Connected graphs have atleast n-1 edges, but does not proove a graph is connected if it has n-1 edges
 
 ### Shortest Path Algorithm
 Shortest path meaning fewest number of edges. If path does not exist, assume it is infinity. Distance to itself is 0. 
